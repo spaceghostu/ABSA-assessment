@@ -21,7 +21,10 @@
     "paths": {
       "ui": [
         "dist/ui/ui",
-        "dist/ui"
+        "dist/ui",
+      ],
+      "@ui": [
+        "projects/ui/src/public-api"
       ]
     }
   },
