@@ -1,8 +1,26 @@
 <div class="links">
-  <a>HOME</a>
-  <a>FAQS</a>
-  <a>CONTACT</a>
-  <a>USD</a>
+  <a [routerLink]="['/home']" routerLinkActive="active">HOME</a>
+  <a [routerLink]="['/faqs']" routerLinkActive="active">FAQS</a>
+  <a [routerLink]="['/contact']" routerLinkActive="active">CONTACT</a>
+  <a>
+    USD
+    <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_down</mat-icon>
+  </a>
 </div>
-
-
+<div class="icons">
+  <div class="icon">
+    <img src="assets/images/facebook.png" />
+  </div>
+  <div class="icon">
+    <img src="assets/images/twitter.png" />
+  </div>
+  <div class="icon">
+    <img src="assets/images/pinterest.png" />
+  </div>
+  <div class="icon mat-icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">phone</mat-icon>
+  </div>
+  <div class="icon mat-icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>
+  </div>
+</div>

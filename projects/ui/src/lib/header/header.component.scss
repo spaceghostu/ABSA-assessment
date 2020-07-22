@@ -1,8 +1,9 @@
 :host {
     display: flex;
+    box-sizing: border-box;
+    width: 100%;;
     flex-flow: row;
     position: absolute;
-    width: 100%;
     padding: 0 200px;
     z-index: 1;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -11,12 +12,19 @@
         flex-flow: row;
         a {
             padding: 12px 17px;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            display: flex;
             cursor: pointer;
             color: rgba(255,255,255,0.6);
             &:not(:last-child) {
                 border-right: 1px solid rgba(255,255,255,0.2);
             }
-            &:hover {
+            transition: background-color 300ms linear;
+            background-color: rgba(255,255,255,0);
+            &:hover,
+            &.active {
                 background-color: rgba(255,255,255,0.2);
             }
         }
@@ -25,5 +33,17 @@
         margin-left:auto;
         display: flex;
         flex-flow: row;
+        align-items: center;
+        .icon {
+            padding: 0 10px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            &.mat-icon {
+                color: white;
+                transform: scale(0.9);
+            }
+        }
     }
 }

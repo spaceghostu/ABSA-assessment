@@ -2,12 +2,12 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { pageTransition } from '@ui';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-faqs',
   animations: [pageTransition],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './faqs.component.html',
+  styleUrls: ['./faqs.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class FaqsComponent implements OnInit {
   @HostBinding('@pageTransition') pageTransition = '';
   constructor() { }
 
