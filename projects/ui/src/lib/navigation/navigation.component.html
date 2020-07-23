@@ -1,10 +1,28 @@
 <div class="logo">canvas</div>
 
 <div class="nav">
-  <a [routerLink]="['/home/home']">HOME</a>
-  <a [routerLink]="['/home/flights']">FLIGHTS</a>
-  <a [routerLink]="['/home/hotels']">HOTELS</a>
-  <a [routerLink]="['/home/holidays']">HOLIDAYS</a>
-  <a [routerLink]="['/home/blog']">BLOG</a>
-  <a>1800 105 2541</a>
+  <a [routerLink]="['/home/home']" routerLinkActive="active">
+    <mat-icon class="example-tab-icon">home</mat-icon>
+    HOME
+  </a>
+  <a [routerLink]="['/home/flights']" routerLinkActive="active">
+    <mat-icon class="example-tab-icon">flight</mat-icon>
+    FLIGHTS
+  </a>
+  <a [routerLink]="['/home/hotels']" routerLinkActive="active">
+    <mat-icon class="example-tab-icon">hotel</mat-icon>
+    HOTELS
+  </a>
+  <a [routerLink]="['/home/holidays']" routerLinkActive="active">
+    <mat-icon class="example-tab-icon">apartment</mat-icon>
+    HOLIDAYS
+  </a>
+  <a [routerLink]="['/home/blog']" routerLinkActive="active">
+    <mat-icon class="example-tab-icon">create</mat-icon>
+    BLOG
+  </a>
+  <a>
+    <mat-icon class="example-tab-icon">phone</mat-icon>
+    1800 105 2541
+  </a>
 </div>
