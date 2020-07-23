@@ -1,5 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { pageTransition } from '@ui';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,12 @@ import { pageTransition } from '@ui';
 })
 export class HomeComponent implements OnInit {
   @HostBinding('@pageTransition') pageTransition = '';
-  constructor() { }
+
+  href: string;
+
+  constructor(private router: Router) {
+    this.href = this.router.url;
+  }
 
   ngOnInit() {
   }

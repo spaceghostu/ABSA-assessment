@@ -1,2 +1,3 @@
 <ui-navigation></ui-navigation>
-<div class="bg"></div>
+<router-outlet></router-outlet>
+<div class="bg" *ngIf="href === '' || href === '/home' || href === '/home/home'"></div>

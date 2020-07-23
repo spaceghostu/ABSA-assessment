@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FlightsComponent } from './pages/flights/flights.component';
+import { HotelsComponent } from './pages/hotels/hotels.component';
+import { HolidaysComponent } from './pages/holidays/holidays.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 
 const routes: Routes = [
@@ -20,19 +24,19 @@ const routes: Routes = [
       },
       {
         path: 'flights',
-        component: HomeComponent,
+        component: FlightsComponent,
       },
       {
         path: 'hotels',
-        component: HomeComponent,
+        component: HotelsComponent,
       },
       {
         path: 'holidays',
-        component: HomeComponent,
+        component: HolidaysComponent,
       },
       {
         path: 'blog',
-        component: HomeComponent,
+        component: BlogComponent,
       }
     ]
   },

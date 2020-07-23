@@ -8,6 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FlightsComponent } from './pages/flights/flights.component';
+import { HotelsComponent } from './pages/hotels/hotels.component';
+import { HolidaysComponent } from './pages/holidays/holidays.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -15,14 +20,19 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     FaqsComponent,
     ContactComponent,
+    FlightsComponent,
+    HotelsComponent,
+    HolidaysComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UiModule,
     BrowserAnimationsModule,
+    MatTabsModule,
+    UiModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
