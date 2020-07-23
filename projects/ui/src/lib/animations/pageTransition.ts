@@ -24,10 +24,10 @@ const INACTIVE = {
   opacity: 0,
 };
 const LEAVING = {
-  zIndex: '10',
+  zIndex: '-2',
 };
 const ENTERING = {
-  zIndex: '5',
+  zIndex: '-1',
 };
 
 export const pageTransition = trigger('pageTransition', [

@@ -12,7 +12,29 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'flights',
+        component: HomeComponent,
+      },
+      {
+        path: 'hotels',
+        component: HomeComponent,
+      },
+      {
+        path: 'holidays',
+        component: HomeComponent,
+      },
+      {
+        path: 'blog',
+        component: HomeComponent,
+      }
+    ]
   },
   {
     path: 'faqs',
