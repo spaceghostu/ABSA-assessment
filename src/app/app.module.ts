@@ -16,6 +16,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from 'angularfire2';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatTabsModule,
     UiModule,
     MatIconModule,
+    AngularFireModule.initializeApp(environment.firebase, 'calvin-absa'),
     MatButtonToggleModule,
   ],
   providers: [],
