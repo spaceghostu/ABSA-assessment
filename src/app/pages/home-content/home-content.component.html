@@ -1,0 +1,95 @@
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">flight</mat-icon>
+      Flights
+    </ng-template>
+    <ng-container *ngTemplateOutlet="tab1"></ng-container>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">hotel</mat-icon>
+      Hotels
+    </ng-template>
+    <ng-container *ngTemplateOutlet="tab2"></ng-container>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Flights + hotels <span class="chip">Save</span>
+    </ng-template>
+    <ng-container *ngTemplateOutlet="tab3"></ng-container>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">apartment</mat-icon>
+      Holidays
+    </ng-template>
+
+    <ng-container *ngTemplateOutlet="tab4"></ng-container>
+   </mat-tab>
+</mat-tab-group>
+
+
+<ng-template #tab1>
+  <div class="tab-content">
+    <div class="row">
+      <div class="heading">BOOK YOUR FLIGHTS</div>
+      <mat-button-toggle-group aria-label="Flight Type" value="domestic"> 
+        <mat-button-toggle value="domestic">Domestic</mat-button-toggle>
+        <mat-button-toggle value="international">International</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+    <div class="row">
+      <div class="input-group">
+        <label>FROM</label>
+        <input placeholder="Eg. Melbourne, Australia" />
+      </div>
+      <div class="input-group">
+        <label>TO</label>
+        <input placeholder="Eg. New York, United States" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-group">
+        <label>DEPARTURE</label>
+        <input placeholder="MM/DD/YY" />
+      </div>
+      <div class="input-group">
+        <label>RETURN</label>
+        <input placeholder="MM/DD/YY"/>
+      </div>
+      <div class="input-group">
+        <label>ADULTS</label>
+        <input placeholder="2"/>
+      </div>
+    </div>
+    <div class="row">
+      <button>SEARCH FLIGHTS</button>
+      <a>Advanced Search</a>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #tab2>
+  <div class="tab-content">
+    <div class="row">
+      <div class="heading">NO CONTENT</div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #tab3>
+  <div class="tab-content">
+    <div class="row">
+      <div class="heading">NO CONTENT</div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #tab4>
+  <div class="tab-content">
+    <div class="row">
+      <div class="heading">NO CONTENT</div>
+    </div>
+  </div>
+</ng-template>

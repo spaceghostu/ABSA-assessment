@@ -13,6 +13,9 @@ import { HotelsComponent } from './pages/hotels/hotels.component';
 import { HolidaysComponent } from './pages/holidays/holidays.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { HomeContentComponent } from './pages/home-content/home-content.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     HotelsComponent,
     HolidaysComponent,
     BlogComponent,
+    HomeContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatTabsModule,
     UiModule,
+    MatIconModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

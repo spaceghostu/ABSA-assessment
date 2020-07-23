@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, OnChanges } from '@angular/core';
 import { pageTransition } from '@ui';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -14,10 +14,13 @@ export class HomeComponent implements OnInit {
   href: string;
 
   constructor(private router: Router) {
-    this.href = this.router.url;
   }
 
   ngOnInit() {
+    this.href = location.href.replace(location.origin, '');
+    this.router.events.subscribe((val) => {
+      this.href = location.href.replace(location.origin, '');
+    });
   }
 
 }

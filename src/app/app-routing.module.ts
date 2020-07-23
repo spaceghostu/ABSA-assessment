@@ -7,12 +7,14 @@ import { FlightsComponent } from './pages/flights/flights.component';
 import { HotelsComponent } from './pages/hotels/hotels.component';
 import { HolidaysComponent } from './pages/holidays/holidays.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { HomeContentComponent } from './pages/home-content/home-content.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: '/home/home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
@@ -20,7 +22,7 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: HomeComponent,
+        component: HomeContentComponent,
       },
       {
         path: 'flights',
